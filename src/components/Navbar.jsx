@@ -41,9 +41,9 @@ const Navbar = () => {
       {/* Menú desplegable */}
       {menuVisible && (
         <div>
-          <Link to="/login">Iniciar sesión</Link>
+          <Link to="/Login">Iniciar sesión</Link>
           <br />
-          <Link to="/register">Registrarse</Link>
+          <Link to="/Register">Registrarse</Link>
         </div>
       )}
     </nav>

@@ -8,14 +8,15 @@ import Pedidos from "./pages/Pedidos";
 import Menu from "./pages/Menu";
 import Usuarios from "./pages/Usuarios";
 import Estadisticas from "./pages/Estadisticas";
-import Login from "./pages/login";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 // Importamos el Navbar
 import Navbar from "./components/Navbar";
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ["/login", "/register"];
+  const hideNavbarRoutes = ["/Login", "/Register"];
   const hideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
@@ -32,6 +33,7 @@ function AppContent() {
           <Route path="/usuarios" element={<Usuarios />} />
           <Route path="/estadisticas" element={<Estadisticas />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </>
